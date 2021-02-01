@@ -4,15 +4,17 @@
     <title>PracticeHtml3</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&family=Noto+Sans+JP&display=swap" rel="stylesheet">    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <%= javascript_include_tag 'application' %>
+<!--    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />-->
 
   </head>
 
   <body>
     <%= yield %>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+<!--    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>-->
   </body>
 </html>
