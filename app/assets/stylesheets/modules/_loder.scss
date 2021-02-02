@@ -1,0 +1,69 @@
+$cBlack: black;
+body {
+  text-align: center;
+}
+
+
+.three-dot-spinner {
+  text-align: center;
+
+  & div{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $cBlack;
+    border-radius: 50%;
+    animation: sk-bouncedelay 1.4s infinite;
+  }
+
+  & .bounce1 {
+    animation-delay: -0.32s;
+  }
+
+  & .bounce2 {
+    animation-delay: -0.16s;
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.rect {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: $cBlack;
+  animation: sk-bouncedelay2 1.4s ease;
+  // animation-timing-function: ease;
+  // animation-delay: 3s;
+  // animation-iteration-count: infinite;
+  // animation-direction: alternate-reverse;
+  // animation-fill-mode: both;
+
+}
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes sk-bouncedelay2 {
+  from {
+    transform: scale(0);
+    background-color: black;
+  }
+
+  to {
+    transform: scale(1);
+    background-color: green;
+  }
+}
