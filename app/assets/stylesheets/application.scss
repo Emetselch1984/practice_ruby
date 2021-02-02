@@ -16,37 +16,35 @@
 
 @import "bootstrap";
 @import 'modules/mixin';
-//@import 'modules/variables';
+@import 'modules/variables';
 @import 'modules/text-animation';
-//@import 'modules/hero-slider';
+@import "loader";
+@import "modules/button";
+//@import "modules/appear";
+@import "breakpoints/base";
 
-//@import "modules/animation";
-//@import "modules/loder";
-//@import "practice";
-//@import "breakpoints/base";
-//
-//@media (min-width: 480px) {
-//  @import "breakpoints/480up";
-//}
-//
-//@media (min-width: 600px) {
-//  @import "breakpoints/600up";
-//}
-//
-//@media (min-width: 960px) {
-//  @import "breakpoints/960up";
-//}
-//
-//@media (min-width: 1280px) {
-//  @import "breakpoints/1280up";
-//}
-//
-//@media (min-resolution: 192dpi)
-//,(-webkit-min-device-pixel-ratio: 2) {
-//  @import "breakpoints/2x";
-//}
-//
-//.swiper-container {
-//  width: 100%;
-//  height: 300px;
-//}
+@media (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+@media (min-resolution: 192dpi)
+,(-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
